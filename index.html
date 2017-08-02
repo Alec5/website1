@@ -6,9 +6,10 @@
   <p id="ghost">Hey look at me, it's a website.</p>
   <script>
     var ghost = document.getElementById("ghost");
+   var num = 0;
    
    ghost.style.position = "relative";
-   setInterval(function(){  ghost.style.left += "10%";}, 2000)
+   setInterval(function(){  ghost.style.left += num; num++}, 100)
    
   </script>
  </body>
