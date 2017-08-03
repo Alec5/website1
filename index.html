@@ -9,8 +9,16 @@
    var num = 10;
    
    ghost.style.position = "relative";
-   setInterval(function(){  ghost.style.left = num%100 + "%"}, 100);
-   setInterval(function(){num++}, 50);
+   /*setInterval(function(){  ghost.style.left = num%100 + "%"}, 100);
+   setInterval(function(){num++}, 50);*/
+   
+   function update(){
+    ghost.style.left = num%80 + "%"
+    ghost.style.top = num%80 + "%"
+    num++
+   }
+   
+   setInterval(update, 60)
    
   </script>
  </body>
