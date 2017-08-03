@@ -15,7 +15,7 @@
    function update(){
     ghost.style.left = num%80 + "%"
     ghost.style.top = num%80 + "%"
-    num++
+    num = Math.random() * 100
    }
    
    setInterval(update, 60)
