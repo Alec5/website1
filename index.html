@@ -6,19 +6,21 @@
   <p id="ghost">Hey look at me, it's a website.</p>
   <script>
     var ghost = document.getElementById("ghost");
-   var num = 10;
+   var x = 10;
+   var y = 9;
    
    ghost.style.position = "relative";
    /*setInterval(function(){  ghost.style.left = num%100 + "%"}, 100);
    setInterval(function(){num++}, 50);*/
    
    function update(){
-    ghost.style.left = num%80 + "%"
-    ghost.style.top = num%80 + "%"
-    num = Math.random() * 100
+    ghost.style.left = x%80 + "%"
+    ghost.style.top = y%80 + "%"
+    x = Math.random() * 100
+    y = Math.random * 99
    }
    
-   setInterval(update, 60)
+   setInterval(update, 80)
    
   </script>
  </body>
